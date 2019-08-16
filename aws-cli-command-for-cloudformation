@@ -1,0 +1,4 @@
+aws cloudformation delete-stack --stack-name blog-stage
+aws cloudformation describe-stack-resources --stack-name blog-stage
+aws cloudformation create-stack --stack-name blog-stage --template-body file://./stack.yml
+ssh -i bseja.pem ubuntu@
